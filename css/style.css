@@ -8,10 +8,7 @@ ul li {
   background: #FAEBD7;
   border-radius:5px;
   margin: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 30px;
+  padding: 10px 10px 10px 30px;
 }
 
 ul a {
@@ -39,7 +36,7 @@ ul a h1 {
 }
 
 
-@import url(http://fonts.googleapis.com/css?family=Coming+Soon);
+
 body {
   margin-top: 5em;
   background: #007a99;
@@ -107,6 +104,7 @@ h1 {
   width: 50px;
   height: 30px;
   border: 1px solid #aa7818;
+  border-bottom: 1px solid rgb(255, 255, 255);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffb700), to(#ff8c00));
   background-image: -webkit-linear-gradient(top, #ffb700, #ff8c00);
@@ -137,7 +135,7 @@ h1 {
   border-radius: 30px;
   width: 30px;
   height: 30px;
-  box-shadow: rgba(255, 255, 255, .3) 0 1px 0px;
+  box-shadow: rgba(255, 255, 255, .3) 0 1px 0;
 }
 
 .search-button1 span img,
@@ -169,9 +167,10 @@ h1 {
   background-image: -o-linear-gradient(top, #f5fafe, #e2edf4);
   background-image: linear-gradient(to bottom, #f5fafe, #e2edf4);
   border: 1px solid #9bb6c9;
+  border-bottom: 1px solid rgb(255, 255, 255);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-  box-shadow: inset rgba(255, 254, 255, 0.2) 0 0.3em .3em, #899faf 0 .5em 0px, rgba(0, 0, 0, 0.2) 0 .9em 3px;
+  box-shadow: inset rgba(255, 254, 255, 0.2) 0 0.3em .3em, #899faf 0 .5em 0, rgba(0, 0, 0, 0.2) 0 .9em 3px;
   -webkit-transform: rotate3d(1, 0, 0, 90deg) translateZ(20px);
   -moz-transform: rotate3d(1, 0, 0, 90deg) translateZ(20px);
   -ms-transform: rotate3d(1, 0, 0, 90deg) translateZ(20px);
@@ -306,53 +305,65 @@ input:-moz-placeholder {
 @-webkit-keyframes showBox {
   0% {
     -webkit-transform: rotate3d(1, 0, 0, 0);
+    transform: rotate3d(1, 0, 0, 0);
   }
   100% {
     -webkit-transform: rotate3d(1, 0, 0, -90deg);
+    transform: rotate3d(1, 0, 0, -90deg);
   }
 }
 
 @-moz-keyframes showBox {
   0% {
     -moz-transform: rotate3d(1, 0, 0, 0);
+    transform: rotate3d(1, 0, 0, 0);
   }
   100% {
     -moz-transform: rotate3d(1, 0, 0, -90deg);
+    transform: rotate3d(1, 0, 0, -90deg);
   }
 }
 
-@-ms-keyframes showBox {
+@keyframes showBox {
   0% {
     -ms-transform: rotate3d(1, 0, 0, 0);
+    transform: rotate3d(1, 0, 0, 0);
   }
   100% {
     -ms-transform: rotate3d(1, 0, 0, -90deg);
+    transform: rotate3d(1, 0, 0, -90deg);
   }
 }
 
 @-webkit-keyframes hideBox {
   0% {
     -webkit-transform: rotate3d(1, 0, 0, -90deg);
+    transform: rotate3d(1, 0, 0, -90deg);
   }
   100% {
     -webkit-transform: rotate3d(1, 0, 0, 0);
+    transform: rotate3d(1, 0, 0, 0);
   }
 }
 
 @-moz-keyframes hideBox {
   0% {
     -moz-transform: rotate3d(1, 0, 0, -90deg);
+    transform: rotate3d(1, 0, 0, -90deg);
   }
   100% {
     -moz-transform: rotate3d(1, 0, 0, 0);
+    transform: rotate3d(1, 0, 0, 0);
   }
 }
 
-@-ms-keyframes hideBox {
+@keyframes hideBox {
   0% {
     -ms-transform: rotate3d(1, 0, 0, -90deg);
+    transform: rotate3d(1, 0, 0, -90deg);
   }
   100% {
     -ms-transform: rotate3d(1, 0, 0, 0);
+    transform: rotate3d(1, 0, 0, 0);
   }
 }
