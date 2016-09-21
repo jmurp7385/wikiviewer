@@ -1,4 +1,5 @@
 /* Cube Style With Animate */
+$(document).ready(function() { 
 $('.search-button2').click(function($scope, $http) {
 
   $('.arrow').hide();
@@ -38,6 +39,7 @@ $('.search-box2 img').click(function() {
     $('.arrow').show();
 
   });
+});
 });
 
 var app = angular.module('viewer', ['ngAnimate']);
