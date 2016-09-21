@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Random Quotes</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery library -->
+    
+   
+
+    <!-- Latest compiled JavaScript -->
+    <script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-animate.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.2.4.min"></script>
+    <script type="text/javascript" src="js/RandQuote.js"></script>
+</head>
+
+<main ng-app="viewer" ng-controller="mainCtrl">
+  <div id="example2">
+    <div id="header">
+      Wikipedia Viewer<br>
+      <a id="rand" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+        Click here for a random article
+      </a>
+    </div>
+
+    <div class="wrapper2">
+      <div class="content-wrapper2">
+        <div class="search-button2">
+          <span><img src="http://bit.ly/29zLcCL" /></span>
+        </div>
+        <div id="search" class="search-box2">
+          <form ng-submit="search()" id="search">
+            <input type="text" ng-model="searchTxt" placeholder="Type your keyword..." />
+            <img src="http://bit.ly/299bJFH" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div>
+    <ul>
+      <a ng-href="{{result.page}}" target="_blank" ng-repeat="result in results">
+        <li>
+          <h1>{{result.title}}</h1>
+          <p>{{result.body}}</p>
+        </li>
+      </a>
+    </ul>
+  </div>
+</main>
